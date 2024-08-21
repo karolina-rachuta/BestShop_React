@@ -1,0 +1,49 @@
+@import '../variables.scss';
+@import '../utilis.scss';
+
+.footer__container {
+    padding-inline: toRem(20);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 toRem(-5) toRem(40) $border-color;
+    border-color: #F7F7F7;
+    min-height: toRem(90);
+
+    .logo--footer {
+        display: inline-block;
+        margin-top: toRem(10);
+        font-family: 'Raleway', sans-serif;
+        font-weight: 300;
+        color: $text-color-professional;
+        font-size: toRem(26);
+    }
+
+    .footer__rights {
+        color: $light-text;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: normal;
+        font-size: toRem(11);
+    }
+
+    .footer__socials {
+        display: flex;
+        gap: toRem(16);
+
+        .twitter {
+            background-image: url(../../assets/Twitter.svg);
+            background-repeat: no-repeat;
+            display: block;
+            width: 25px;
+            height: 25px;
+        }
+
+        .facebook {
+            background-image: url(../../assets/Facebook.svg);
+            background-repeat: no-repeat;
+            display: block;
+            width: 25px;
+            height: 25px;
+        }
+    }
+}
