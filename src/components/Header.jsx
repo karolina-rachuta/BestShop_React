@@ -1,5 +1,6 @@
-import { useState, useRef } from "react";
+import { useRef } from "react";
 import Hamburger from "./header/Hamburger";
+import Menu from "./header/Menu";
 
 function Header() {
   const navRef = useRef(null);
