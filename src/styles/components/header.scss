@@ -1,0 +1,18 @@
+@import '../variables.scss';
+@import '../utilis.scss';
+
+.header__container {
+    height: toRem(70);
+    box-shadow: 0 toRem(3) toRem(6) $border-color;
+    background-color: red;
+
+    nav {
+        ul {
+            display: flex;
+
+            li {
+                list-style: none;
+            }
+        }
+    }
+}

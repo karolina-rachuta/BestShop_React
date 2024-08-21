@@ -1,0 +1,18 @@
+@import './styles/normalize.scss';
+@import './styles/variables.scss';
+@import './styles/components/header.scss';
+
+
+.container {
+    width: 100%;
+    background-color: $background-color;
+}
+
+
+
+@media only screen and (min-width: 700px) {
+    .container {
+        width: 100%;
+        max-width: 1626px;
+    }
+}

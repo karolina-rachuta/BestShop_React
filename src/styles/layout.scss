@@ -1,0 +1,7 @@
+@import "./variables";
+@import "./utils";
+
+html, body {
+   font-size: toRem($base-font-size);
+   padding-inline: toRem(16);
+}
