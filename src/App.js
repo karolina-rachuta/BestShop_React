@@ -1,20 +1,38 @@
+import { useState, useRef } from 'react';
 import './App.scss';
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+  const navRef = useRef(null);
+
+  function handleHamburger() {
+    setIsOpen(prev => !prev)
+    if (navRef.current) {
+      navRef.current.classList.toggle('open', !isOpen);
+    }
+    //isOpen ? navRef.current.style.display = 'none' : navRef.current.style.display = 'flex';
+  }
   return (
     <div className="container">
       <header>
-        <div className='header__container'>
-          <span>BestShop</span>
-          <nav>
+        <nav className='header__container'>
+          <div className="header__box">
+            <span className='logo'>BestShop</span>
+            <div className='hamburger' onClick={handleHamburger}>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div className='header__menu' ref={navRef}>
             <ul>
               <li>WHY US</li>
               <li>BENEFITS</li>
               <li>PRICES</li>
               <li>CONTACT</li>
             </ul>
-          </nav>
-        </div>
+          </div>
+        </nav>
       </header>
       <main>
         main

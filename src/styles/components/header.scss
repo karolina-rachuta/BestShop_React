@@ -2,16 +2,112 @@
 @import '../utilis.scss';
 
 .header__container {
-    height: toRem(70);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: toRem($padding-container);
+    width: 100%;
     box-shadow: 0 toRem(3) toRem(6) $border-color;
-    background-color: red;
+    background-color: $background-color;
+    line-height: 1.16;
+    min-height: toRem(70);
+    padding-top: toRem(15);
+    padding-bottom: toRem(15);
 
-    nav {
+    @media only screen and (min-width: toRem(700)) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding-top: toRem(0);
+        padding-bottom: toRem(0);
+    }
+
+    .header__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        .logo {
+            display: inline-block;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+            color: $text-color-professional;
+            font-size: toRem(32);
+        }
+
+        .hamburger {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: toRem(3);
+            cursor: pointer;
+
+            @media only screen and (min-width: toRem(700)) {
+                display: none;
+            }
+
+            span {
+                display: inline-block;
+                width: toRem(25);
+                height: toRem(2);
+                background-color: $blue-pattern;
+                border-radius: toRem(8);
+            }
+        }
+    }
+
+    .header__menu {
+        display: none;
+        align-items: center;
+        width: 100%;
+        padding-top: toRem(10);
+
+        &.open {
+            display: flex;
+        }
+
+        @media only screen and (min-width: toRem(700)) {
+            display: flex;
+            min-width: 500px;
+            padding-top: toRem(0);
+        }
+
         ul {
             display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            padding-left: 0;
+            gap: toRem(10);
+
+            @media only screen and (min-width: toRem(700)) {
+                flex-direction: row;
+                justify-content: end;
+                gap: toRem(20);
+            }
 
             li {
                 list-style: none;
+                font-size: toRem(11);
+                color: $light-text;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: bold;
+                line-height: 1.36;
+                border-bottom: 4px solid transparent;
+                padding: toRem(10);
+
+                @media only screen and (min-width: toRem(700)) {
+                    padding: toRem(26);
+                }
+
+                &:hover {
+                    border-bottom: 4px solid $blue-pattern;
+                    color: $text-color;
+                }
             }
         }
     }

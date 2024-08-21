@@ -2,17 +2,16 @@
 @import '../utilis.scss';
 
 .footer__container {
-    padding-inline: toRem(20);
+    padding-inline: toRem($padding-container);
     display: flex;
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 toRem(-5) toRem(40) $border-color;
-    border-color: #F7F7F7;
+    border-color: $background-color-second;
     min-height: toRem(90);
 
     .logo--footer {
-        display: inline-block;
-        margin-top: toRem(10);
+        display: inline-block; 
         font-family: 'Raleway', sans-serif;
         font-weight: 300;
         color: $text-color-professional;
