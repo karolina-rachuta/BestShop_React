@@ -1,0 +1,48 @@
+@import '../variables.scss';
+@import '../utilis.scss';
+
+.hero__container {
+    width: 100%;
+    padding-inline: $padding-container;
+    height: 100vh;
+    background-color: $background-color;
+    background-image: url(../../assets/Background@2x.png);
+    background-repeat: no-repeat;
+    background-size: 210%;
+    background-position: top 300px center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (min-width: toRem(700)) {
+        background-size: 100%;
+        background-position: top 320px center;
+    }
+
+    .hero__box {
+        margin-top: toRem(100);
+        text-align: center;
+
+        h1 {
+            color: $text-color;
+            font-family: 'Raleway', sans-serif;
+            font-size: toRem(35);
+            font-weight: normal;
+            line-height: 1.17;
+        }
+
+        .hero__lead {
+            color: $text-color;
+            font-family: 'Open Sans', sans-serif;
+            font-size: toRem(16);
+            font-weight: normal;
+            line-height: 1.375;
+            text-align: center;
+            margin-top: toRem(20);
+            margin-bottom: toRem(20);
+        }
+
+
+
+    }
+}
