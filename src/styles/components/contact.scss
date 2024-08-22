@@ -10,7 +10,6 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    min-height: 200px;
     min-height: toRem(376);
     gap: toRem(50);
     padding-inline: toRem(32);
@@ -20,6 +19,7 @@
         gap: toRem(16);
         flex-direction: row;
         align-items: start;
+        margin-top: toRem(100);
         width: 80%;
         gap: toRem(60);
     }
