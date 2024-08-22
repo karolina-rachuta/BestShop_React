@@ -5,25 +5,25 @@
 @import './styles/components/header.scss';
 @import './styles/components/footer.scss';
 @import './styles/components/hero.scss';
-
+@import './styles/components/contact.scss';
 
 .container {
     width: 100%;
     background-color: $background-color;
-}
+    border: 1px solid $border-color;
 
-
-
-@media only screen and (min-width: 700px) {
-    .container {
+    @media only screen and (min-width: 700px) {
         width: 100%;
         max-width: 1626px;
     }
 }
 
+
+
+
 .btn {
     color: #fff;
-    font-family:'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: toRem(16);
     line-height: 1.375;
     font-weight: bold;
