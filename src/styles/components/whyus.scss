@@ -12,13 +12,24 @@
     justify-content: center;
     align-items: center;
     gap: toRem(50);
+    margin-top: toRem(40);
 
-    @media screen and (min-width: toRem(700)) {
+    @media screen and (min-width: toRem($breakpoint-medium)) {
         gap: toRem(100);
+        margin-top: toRem(10);
     }
 
     h2 {
         text-align: center;
+        font-family: 'Ralawey', sans-serif;
+        font-weight: normal;
+        font-size: toRem(30);
+        color: $text-color;
+        line-height: 1.17;
+
+        @media only screen and (min-width: toRem($breakpoint-medium)) {
+            font-size: toRem(36);
+        }
     }
 
     .icons__container {
@@ -31,9 +42,106 @@
         height: 100%;
 
 
-        @media only screen and (min-width: toRem(700)) {
+        @media only screen and (min-width: toRem($breakpoint-medium)) {
             flex-direction: row;
-            justify-content: space-evenly;
+            justify-content: center;
+            width: 60%;
+            // gap: toRem(50);
+        }
+
+        .icon__box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: toRem(20);
+            width: 100%;
+            height: 100%;
+
+            .icon__box--pink {
+                position: relative;
+                z-index: 1;
+
+                &::before {
+                    content: "";
+                    background-color: $text-color-basic;
+                    width: toRem(63);
+                    height: toRem(63);
+                    border-radius: 50%;
+                    position: absolute;
+                    top: toRem(-5);
+                    left: toRem(-30);
+                    z-index: -1;
+                }
+
+                .person__icon {
+                    width: toRem(44);
+                    height: toRem(52);
+                }
+            }
+
+            .icon__box--blue {
+                position: relative;
+                z-index: 1;
+
+                &::before {
+                    content: "";
+                    background-color: $blue-pattern;
+                    width: toRem(63);
+                    height: toRem(63);
+                    border-radius: 50%;
+                    position: absolute;
+                    top: toRem(-10);
+                    left: toRem(-19);
+                    z-index: -1;
+                }
+
+                .eye__icon {
+                    width: toRem(65);
+                    height: toRem(37);
+                }
+            }
+
+            .icon__box--green {
+                position: relative;
+                z-index: 1;
+
+                &::before {
+                    content: "";
+                    background-color: $green-pattern;
+                    width: toRem(63);
+                    height: toRem(63);
+                    border-radius: 50%;
+                    position: absolute;
+                    top: toRem(-5);
+                    left: toRem(-28);
+                    z-index: -1;
+                }
+
+                .catalog__icon {
+                    width: toRem(52);
+                    height: toRem(48);
+                }
+            }
+
+            .icon__number {
+                text-align: center;
+                font-family: 'Ralawey', sans-serif;
+                font-weight: 800;
+                font-size: toRem(20);
+                letter-spacing: toRem(5.96);
+                color: $text-color;
+                line-height: 1.2;
+            }
+
+            .icon__lead {
+                text-align: center;
+                font-family: 'Ralawey', sans-serif;
+                font-weight: 400;
+                font-size: toRem(17);
+                color: $light-text;
+                line-height: 1.17;
+            }
         }
     }
 }

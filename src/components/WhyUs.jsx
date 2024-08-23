@@ -7,17 +7,26 @@ function WhyUs() {
     <div className="whyus__container">
       <h2>The most popular sales platform in country</h2>
       <div className="icons__container">
-        <div>
-          <img src={PersonImage} alt="" />
-          <p>100000+</p>
+        <div className="icon__box">
+          <div className="icon__box--pink">
+            <img src={PersonImage} alt="" className="person__icon" />
+          </div>
+          <p className="icon__number">100000+</p>
+          <p className="person__lead icon__lead">daily entries</p>
         </div>
-        <div>
-          <img src={EyeImage} alt="" />
-          <p>2000000+</p>
+        <div className="icon__box">
+          <div className="icon__box--blue">
+            <img src={EyeImage} alt="" className="eye__icon" />
+          </div>
+          <p className="icon__number">2000000+</p>
+          <p className="eye__lead icon__lead">seen products every day</p>
         </div>
-        <div>
-          <img src={CatalogImage} alt="" />
-          <p>10000+</p>
+        <div className="icon__box">
+          <div className="icon__box--green">
+            <img src={CatalogImage} alt="" className="catalog__icon" />
+          </div>
+          <p className="icon__number">10000+</p>
+          <p className="icon__lead">added posts daily</p>
         </div>
       </div>
     </div>
