@@ -37,6 +37,7 @@
             font-weight: 300;
             color: $text-color-professional;
             font-size: toRem(32);
+            cursor: pointer;
         }
 
         .hamburger {
@@ -100,6 +101,7 @@
                 line-height: 1.36;
                 border-bottom: 4px solid transparent;
                 padding: toRem(10);
+                cursor: pointer;
 
                 @media only screen and (min-width: toRem(700)) {
                     padding: toRem(26);

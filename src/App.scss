@@ -20,9 +20,6 @@
     }
 }
 
-
-
-
 .btn {
     color: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -34,4 +31,5 @@
     background-color: $blue-pattern;
     border: none;
     padding: toRem(15) toRem(120);
+    cursor: pointer;
 }

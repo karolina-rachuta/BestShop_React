@@ -13,10 +13,12 @@
     align-items: center;
     gap: toRem(50);
     margin-top: toRem(40);
+    margin-bottom: toRem(40);
 
     @media screen and (min-width: toRem($breakpoint-medium)) {
         gap: toRem(100);
         margin-top: toRem(10);
+        margin-bottom: toRem(0);
     }
 
     h2 {
@@ -98,6 +100,7 @@
                 .eye__icon {
                     width: toRem(65);
                     height: toRem(37);
+                    margin-bottom: toRem(15);
                 }
             }
 
