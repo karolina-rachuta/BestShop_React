@@ -49,18 +49,20 @@
 
             @media only screen and (min-width: toRem($breakpoint-medium)) {
                 max-width: 50%;
+                max-height: 370px;
             }
         }
 
 
         .box__text {
             align-self: start;
-            margin-top: toRem(40);
+            margin-top: toRem(20);
             padding-bottom: toRem(30);
             width: 100%;
 
             @media only screen and (min-width: toRem($breakpoint-medium)) {
                 max-width: toRem(416);
+                max-height: 370px;
             }
 
             h3,
@@ -92,14 +94,11 @@
         }
 
         .box__text--phone {
-            @media only screen and (min-width: toRem($breakpoint-medium)) {
-                border-bottom: $blue-pattern toRem(4) solid;
-            }
-        }
+            order: 1;
 
-        .box__text--trumpet {
             @media only screen and (min-width: toRem($breakpoint-medium)) {
-                border-bottom: $green-pattern toRem(4) solid;
+                order: 2;
+                border-bottom: $blue-pattern toRem(4) solid;
             }
         }
 
@@ -131,6 +130,14 @@
                     max-width: toRem(180);
                     max-height: toRem(180);
                 }
+            }
+        }
+
+        .benefit__column--reverse {
+            order: 2;
+
+            @media screen and (min-width: toRem($breakpoint-medium)) {
+                order: 1;
             }
         }
 
@@ -169,6 +176,7 @@
             }
         }
 
+
         .img__macbook {
             width: toRem(193);
 
@@ -188,13 +196,76 @@
                 height: auto;
             }
         }
+    }
 
-        .img__trumpet {
-            width: toRem(296);
-            height: auto;
+    .benefit__container--trumpet {
+        background-color: $background-color-second;
+        border: none;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: toRem(0);
+
+        @media only screen and (min-width: toRem($breakpoint-medium)) {
+            gap: toRem(32);
+        }
+
+
+        .box__text--trumpet {
+            border: toRem(1) solid #E8E9ED;
+            min-height: toRem(370);
+            padding: toRem(80) toRem(80) toRem(140) toRem(40);
+            margin: 0;
+            border-radius: toRem(5);
+            max-width: toRem(830);
+            height: 100%;
+            width: 100%;
+            background-color: $background-color;
+            position: relative;
 
             @media only screen and (min-width: toRem($breakpoint-medium)) {
-                width: toRem(296);
+                width: 60%;
+                height: 100%;
+                max-height: toRem(370);
+            }
+
+            h3 {
+                margin-top: 40px;
+            }
+
+            p {
+                @media only screen and (min-width: toRem($breakpoint-medium)) {
+                    padding-bottom: toRem(25);
+                    border-bottom: toRem(4) solid $green-pattern;
+                }
+            }
+        }
+
+        .benefit__column--trumpet {
+            background-color: $green-pattern;
+            width: 100%;
+            max-width: toRem(800);
+            height: 100%;
+            min-height: toRem(370);
+            padding: toRem(120) toRem(60) toRem(80) toRem(40);
+            border: toRem(1) solid #E8E9ED;
+            border-radius: toRem(5);
+
+            @media only screen and (min-width: toRem($breakpoint-medium)) {
+                width: 40%;
+                height: 100%;
+                max-height: toRem(370);
+            }
+
+            .img__trumpet {
+                max-width: toRem(296);
+                height: auto;
+                width: 100%;
+
+                @media only screen and (min-width: toRem($breakpoint-medium)) {
+                    width: toRem(276);
+                }
             }
         }
     }

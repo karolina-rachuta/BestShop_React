@@ -33,7 +33,7 @@ function Benefits() {
             ad minim veniam.
           </p>
         </div>
-        <div className="benefit__column">
+        <div className="benefit__column benefit__column--reverse">
           <div className="benefit__column--phone">
             <img
               src={Phone_Picture}
@@ -43,7 +43,7 @@ function Benefits() {
           </div>
         </div>
       </div>
-      <div className="benefit__container">
+      <div className="benefit__container benefit__container--trumpet">
         <div className="benefit__column box__text box__text--trumpet">
           <h3>Increase recognition your brand!</h3>
           <p>
@@ -52,7 +52,7 @@ function Benefits() {
             ad minim veniam.
           </p>
         </div>
-        <div className="benefit__column benefit__column--right">
+        <div className="benefit__column benefit__column--trumpet">
           <img
             src={Trumpet_Picture}
             alt="Trumpet picture"
