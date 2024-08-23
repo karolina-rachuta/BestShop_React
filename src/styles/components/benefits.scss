@@ -1,0 +1,146 @@
+@import '../variables.scss';
+@import '../utilis.scss';
+
+.benefits__container {
+    width: 100%;
+    height: 100%;
+    background-color: $background-color-second;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: toRem(50);
+    padding: toRem(50) toRem($padding-container) toRem(50) toRem($padding-container);
+
+    @media only screen and (min-width: toRem($breakpoint-medium)) {
+        gap: toRem(30);
+    }
+
+    .benefit__container {
+        width: 90%;
+        height: 100%;
+        min-height: toRem(370);
+        padding: toRem($padding-container);
+        background-color: $background-color;
+        border: toRem(1) solid #E8E9ED;
+        border-radius: toRem(5);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        gap: toRem(32);
+
+
+        @media only screen and (min-width: toRem($breakpoint-medium)) {
+            width: 80%;
+            min-height: toRem(370);
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        .benefit__column {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: toRem(16);
+            padding: toRem(16);
+
+
+            @media only screen and (min-width: toRem($breakpoint-medium)) {
+                width: 50%;
+            }
+        }
+
+        .benefit__column--laptop {
+            z-index: 1;
+            position: relative;
+
+            &::before {
+                content: "";
+                background-color: #FB3B64;
+                border-radius: toRem(20);
+                position: absolute;
+                z-index: -1;
+                transform: rotate(35deg);
+
+                top: toRem(-30);
+                right: toRem(10);
+                width: 100%;
+                height: 100%;
+                max-width: toRem(90);
+                max-height: toRem(90);
+
+                @media only screen and (min-width: toRem($breakpoint-medium)) {
+                    border-radius: toRem(41);
+                    top: toRem(-30);
+                    right: toRem(10);
+                    width: 100%;
+                    height: 100%;
+                    max-width: toRem(180);
+                    max-height: toRem(180);
+                }
+
+            }
+        }
+
+        .benefit__column--phone {
+            z-index: 1;
+            position: relative;
+
+            &::before {
+                content: "";
+                background-color: $blue-pattern;
+                border-radius: 50%;
+                position: absolute;
+                top: toRem(-20);
+                right: toRem(80);
+                z-index: -1;
+                width: toRem(320);
+                height: toRem(320);
+            }
+        }
+
+        h3,
+        p {
+            width: 100%;
+            text-align: left;
+        }
+
+        .img__macbook {
+            width: toRem(193);
+
+            @media only screen and (min-width: toRem($breakpoint-medium)) {
+                width: 100%;
+                max-width: toRem(387);
+                height: auto;
+            }
+
+        }
+
+        .img__phone {
+            width: toRem(175);
+            height: auto;
+
+            @media only screen and (min-width: toRem($breakpoint-medium)) {
+                width: toRem(426);
+            }
+        }
+
+        .img__trumpet {
+            width: toRem(296);
+            height: auto;
+
+            @media only screen and (min-width: toRem($breakpoint-medium)) {
+                width: toRem(296);
+            }
+
+        }
+    }
+
+
+}
