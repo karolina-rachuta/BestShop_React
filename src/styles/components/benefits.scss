@@ -87,19 +87,19 @@
 
         .box__text--laptop {
             @media only screen and (min-width: toRem($breakpoint-medium)) {
-                border-bottom: #FB3B64 4px solid;
+                border-bottom: $text-color-basic toRem(4) solid;
             }
         }
 
         .box__text--phone {
             @media only screen and (min-width: toRem($breakpoint-medium)) {
-                border-bottom: $blue-pattern 4px solid;
+                border-bottom: $blue-pattern toRem(4) solid;
             }
         }
 
         .box__text--trumpet {
             @media only screen and (min-width: toRem($breakpoint-medium)) {
-                border-bottom: $green-pattern 4px solid;
+                border-bottom: $green-pattern toRem(4) solid;
             }
         }
 
@@ -109,7 +109,7 @@
 
             &::before {
                 content: "";
-                background-color: #FB3B64;
+                background-color: $text-color-basic;
                 border-radius: toRem(20);
                 position: absolute;
                 z-index: -1;
@@ -131,7 +131,6 @@
                     max-width: toRem(180);
                     max-height: toRem(180);
                 }
-
             }
         }
 
@@ -146,30 +145,28 @@
                 position: absolute;
                 top: toRem(-20);
                 right: toRem(60);
-                z-index: -1;
-                // width: 100%;
-                // height: 100%;
                 width: toRem(140);
                 height: toRem(140);
+                z-index: -1;
 
-                
-                @media only screen and (min-width: toRem($breakpoint-medium)) and (max-width: toRem(1050)) {
-                        top: toRem(-20);
-                        right: toRem(80);
-                        // width: 100%;
-                        // height: 100%;
-                        width: toRem(200);
-                        height: toRem(200);
-                    }
+                @media only screen and (min-width: toRem($breakpoint-medium)) and (max-width: toRem(920)) {
+                    right: toRem(70);
+                    width: toRem(200);
+                    height: toRem(200);
                 }
-                // @media only screen and (min-width: toRem(1050)) {
-                //     top: toRem(-20);
-                //     right: toRem(80);
-                //     // width: 100%;
-                //     // height: 100%;
-                //     width: toRem(300);
-                //     height: toRem(300);
-                // }
+
+                @media only screen and (min-width: toRem(920)) and (max-width: toRem(1050)) {
+                    right: toRem(100);
+                    width: toRem(230);
+                    height: toRem(230);
+                }
+
+                @media only screen and (min-width: toRem(1050)) {
+                    right: toRem(80);
+                    width: toRem(250);
+                    height: toRem(250);
+                }
+            }
         }
 
         .img__macbook {
@@ -180,7 +177,6 @@
                 max-width: toRem(387);
                 height: auto;
             }
-
         }
 
         .img__phone {
@@ -200,9 +196,6 @@
             @media only screen and (min-width: toRem($breakpoint-medium)) {
                 width: toRem(296);
             }
-
         }
     }
-
-
 }
