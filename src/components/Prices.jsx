@@ -11,7 +11,7 @@ function Prices() {
   }
 
   return (
-    <div className="prices__container">
+    <div className="prices__container" id="prices">
       <div className="prices__hdl">Pricing</div>
       <div className="prices__packages">
         <div

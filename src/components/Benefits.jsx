@@ -4,7 +4,7 @@ import Trumpet_Picture from "../assets/Trumpet@2x.png";
 
 function Benefits() {
   return (
-    <div className="benefits__container">
+    <div className="benefits__container" id="benefits">
       <div className="benefit__container">
         <div className=" benefit__column box__text box__text--laptop">
           <h3>Be always first</h3>

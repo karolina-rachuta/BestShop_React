@@ -4,7 +4,7 @@ import CatalogImage from "../assets/Catalog.svg";
 
 function WhyUs() {
   return (
-    <div className="whyus__container">
+    <div className="whyus__container" id="whyus">
       <h2>The most popular sales platform in country</h2>
       <div className="icons__container">
         <div className="icon__box">

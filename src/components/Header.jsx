@@ -6,7 +6,7 @@ function Header() {
   const navRef = useRef(null);
 
   return (
-    <header>
+    <header id="header">
       <nav className="header__container">
         <div className="header__box">
           <span className="logo">BestShop</span>

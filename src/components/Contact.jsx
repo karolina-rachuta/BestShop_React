@@ -1,6 +1,6 @@
 function Contact() {
   return (
-    <div className="contact__container">
+    <div className="contact__container" id="contact">
       <div className="contact__column contact__column--left">
         <h2>Any questions?</h2>
         <p className="contact__lead">Leave your email address or call us!</p>
