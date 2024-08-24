@@ -6,7 +6,7 @@ function Prices() {
   function handleChosenPackage() {
     setChosenPackage((prev) => !prev);
     if (packageRef.current) {
-        packageRef.current.classList.toggle('chosen', !chosenPackage);
+      packageRef.current.classList.toggle("chosen", !chosenPackage);
     }
   }
 
@@ -25,11 +25,11 @@ function Prices() {
           </div>
           <div className="package__description">
             <ul>
-              <li>100 MB HDD</li>
-              <li>1 Subdomain</li>
-              <li>2 E-mails</li>
-              <li>Two years license</li>
-              <li>Full support</li>
+              <li className="checked">100 MB HDD</li>
+              <li className="checked">1 Subdomain</li>
+              <li className="checked">2 E-mails</li>
+              <li className="crossed">Two years license</li>
+              <li className="crossed">Full support</li>
             </ul>
             <button type="submit" className="btn btn--basic">
               Begin
@@ -44,11 +44,11 @@ function Prices() {
           </div>
           <div className="package__description">
             <ul>
-              <li>500 MB HDD</li>
-              <li>2 Subdomains</li>
-              <li>5 E-mails</li>
-              <li>One year license</li>
-              <li>Full support</li>
+              <li className="checked">500 MB HDD</li>
+              <li className="checked">2 Subdomains</li>
+              <li className="checked">5 E-mails</li>
+              <li className="checked">One year license</li>
+              <li className="crossed">Full support</li>
             </ul>
             <button type="submit" className="btn btn--professional">
               Begin
@@ -63,11 +63,11 @@ function Prices() {
           </div>
           <div className="package__description">
             <ul>
-              <li>2 GB HDD</li>
-              <li>5 Subdomains</li>
-              <li>20 E-mails</li>
-              <li>Two years license</li>
-              <li>Full support</li>
+              <li className="checked">2 GB HDD</li>
+              <li className="checked">5 Subdomains</li>
+              <li className="checked">20 E-mails</li>
+              <li className="checked">Two years license</li>
+              <li className="checked">Full support</li>
             </ul>
             <button type="submit" className="btn btn--premium">
               Begin

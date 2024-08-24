@@ -17,7 +17,7 @@
         font-family: $raleway-font;
         font-weight: normal;
         color: $text-color;
-        margin-top: toRem(100);
+        margin-top: toRem(50);
         margin-bottom: toRem(50);
 
         @media screen and (min-width: toRem($breakpoint-medium)) {
@@ -31,11 +31,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: toRem(59);
+        gap: toRem(80);
         padding-inline: toRem($padding-container);
 
         @media screen and (min-width: toRem($breakpoint-medium)) {
             flex-direction: row;
+            gap: toRem(60);
         }
 
         .prices__package {
@@ -116,6 +117,29 @@
                         font-weight: normal;
                         color: $text-color;
                         padding-bottom: toRem(25);
+
+                        &.checked::before {
+                            content: "";
+                            min-width: 11px;
+                            min-height: 11px;
+                            background-image: url(../../assets/Ckechmark-1.78835921.svg);
+                            color: $green-pattern;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            display: inline-block;
+                            margin-right: toRem(10);
+                        }
+
+                        &.crossed::before {
+                            content: "";
+                            min-width: 11px;
+                            min-height: 11px;
+                            background-image: url(../../assets/Close.90b12221.svg);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            display: inline-block;
+                            margin-right: toRem(10);
+                        }
                     }
                 }
 
