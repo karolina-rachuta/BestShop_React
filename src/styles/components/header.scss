@@ -35,9 +35,13 @@
             display: inline-block;
             font-family: 'Raleway', sans-serif;
             font-weight: 300;
-            color: $text-color-professional;
             font-size: toRem(32);
             cursor: pointer;
+
+            a {
+                text-decoration: none;
+                color: $text-color-professional;
+            }
         }
 
         .hamburger {

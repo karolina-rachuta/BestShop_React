@@ -1,3 +1,4 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import './App.scss';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -9,15 +10,21 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="container">
-      <Header />
-      <Hero />
-      <WhyUs />
-      <Benefits />
-      <Prices />
-      <Contact />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={
+          <div className="container">
+            <Header />
+            <Hero />
+            <WhyUs />
+            <Benefits />
+            <Prices />
+            <Contact />
+            <Footer />
+          </div>
+        }/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
