@@ -229,7 +229,9 @@
             }
 
             h3 {
-                margin-top: 40px;
+                @media only screen and (min-width: toRem($breakpoint-medium)) {
+                    margin-top: 40px;
+                }
             }
 
             p {
