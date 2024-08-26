@@ -3,14 +3,14 @@
 
 .hero__container {
     width: 100%;
-    padding-inline: $padding-container;
+    padding-inline: toRem($padding-container);
     height: 100vh;
     min-height: 550px;
     background-color: $background-color;
     background-image: url(../../assets/Background@2x.png);
     background-repeat: no-repeat;
     background-size: 210%;
-    background-position: top 300px center;
+    background-position: top 310px center;
     margin: 0 auto;
     display: flex;
     justify-content: center;
