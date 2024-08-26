@@ -4,7 +4,8 @@
 .hero__container {
     width: 100%;
     padding-inline: $padding-container;
-    height: 100%;
+    height: 100vh;
+    // height: 100%;
     min-height: 600px;
     background-color: $background-color;
     background-image: url(../../assets/Background@2x.png);
@@ -15,18 +16,12 @@
     display: flex;
     justify-content: center;
 
-    // @media screen and (min-width: toRem($breakpoint-small)) and (max-width: toRem($breakpoint-medium)) {
-    //     min-height: 600px;
-    //     // padding-bottom: 200px;
-    //     // height: 100vh;
-    // }
     @media only screen and (min-width: toRem($breakpoint-medium)) and (max-width: toRem(950)) {
         background-size: 150%;
         min-height: 400px;
         background-position: top 360px center;
         padding-bottom: 400px;
         margin-bottom: 30px;
-        // height: 100vh;
     }
 
     @media only screen and (min-width: toRem(950)) and (max-width: toRem(1450)) {
@@ -35,7 +30,6 @@
         background-position: top 360px center;
         padding-bottom: 500px;
         margin-bottom: 30px;
-        // height: 100vh;
     }
 
     @media only screen and (min-width: toRem(1450)) {
@@ -44,7 +38,6 @@
         background-position: top 360px center;
         padding-bottom: 500px;
         margin-bottom: 30px;
-        // height: 100vh;
     }
 
     .hero__box {
