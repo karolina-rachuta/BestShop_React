@@ -1,6 +1,9 @@
 # Best Shop
 This is an example of a webpage suitable for both desktop and mobile devices.
 
+## Live demo:
+https://bestshop-rwd-react.netlify.app/
+
 ## Tech Stack:
 - React js
 - React Router
@@ -8,6 +11,7 @@ This is an example of a webpage suitable for both desktop and mobile devices.
 - SCSS
 - Adobe XD
 - RWD
+- Netlify
 
 ## Screenshots:
 - Desktop:

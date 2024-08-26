@@ -4,7 +4,6 @@
 .hero__container {
     width: 100%;
     padding-inline: $padding-container;
-    //height: 100vh;
     height: 100%;
     min-height: 600px;
     background-color: $background-color;
@@ -16,14 +15,45 @@
     display: flex;
     justify-content: center;
 
-    @media only screen and (min-width: toRem(700)) {
+    // @media screen and (min-width: toRem($breakpoint-small)) and (max-width: toRem($breakpoint-medium)) {
+    //     min-height: 600px;
+    //     // padding-bottom: 200px;
+    //     // height: 100vh;
+    // }
+    @media only screen and (min-width: toRem($breakpoint-medium)) and (max-width: toRem(950)) {
+        background-size: 150%;
+        min-height: 400px;
+        background-position: top 360px center;
+        padding-bottom: 400px;
+        margin-bottom: 30px;
+        // height: 100vh;
+    }
+
+    @media only screen and (min-width: toRem(950)) and (max-width: toRem(1450)) {
+        background-size: 150%;
+        min-height: 400px;
+        background-position: top 360px center;
+        padding-bottom: 500px;
+        margin-bottom: 30px;
+        // height: 100vh;
+    }
+
+    @media only screen and (min-width: toRem(1450)) {
         background-size: 100%;
-        background-position: top 320px center;
+        min-height: 400px;
+        background-position: top 360px center;
+        padding-bottom: 500px;
+        margin-bottom: 30px;
+        // height: 100vh;
     }
 
     .hero__box {
-        margin-top: toRem(100);
+        margin-top: toRem(50);
         text-align: center;
+
+        @media only screen and (min-width: toRem(700)) {
+            margin-top: toRem(100);
+        }
 
         h1 {
             color: $text-color;
@@ -47,8 +77,5 @@
             margin-top: toRem(20);
             margin-bottom: toRem(20);
         }
-
-
-
     }
 }

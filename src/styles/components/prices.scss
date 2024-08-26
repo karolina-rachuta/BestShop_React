@@ -1,8 +1,6 @@
 @import '../variables.scss';
 @import '../utilis.scss';
 
-
-
 .prices__container {
     width: 100%;
     padding-inline: $padding-container;
@@ -71,7 +69,6 @@
                 align-items: center;
                 justify-content: start;
                 gap: toRem(10);
-
 
                 .package__title {
                     font-family: $raleway-font;
