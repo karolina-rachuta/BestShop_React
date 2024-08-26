@@ -34,6 +34,10 @@
     padding: toRem(15) toRem(80);
     cursor: pointer;
 
+    &:hover {
+        transform: scale(105%);
+    }
+
     @media screen and (min-width: toRem($breakpoint-medium)) {
         padding: toRem(15) toRem(120);
     }
