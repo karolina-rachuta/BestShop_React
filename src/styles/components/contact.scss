@@ -42,7 +42,7 @@
     .contact__column--left {
 
         h2 {
-            font-family: 'Raleway', sans-serif;
+            font-family: $raleway-font;
             font-size: toRem(40);
             color: $text-color;
             text-align: left;
@@ -54,7 +54,7 @@
         }
 
         .contact__lead {
-            font-family: 'Open Sans', sans-serif;
+            font-family: $open-sans-font;
             font-size: toRem(16);
             font-weight: normal;
             color: $text-color;
@@ -72,7 +72,7 @@
             align-items: start;
             gap: toRem(16);
             justify-content: space-between;
-            font-family: 'Open Sans', sans-serif;
+            font-family: $open-sans-font;
             font-size: toRem(16);
             font-weight: 600;
             color: $light-text;
@@ -128,7 +128,7 @@
 
             &:nth-of-type(1),
             &:nth-of-type(2) {
-                font-family: 'Open Sans', sans-serif;
+                font-family: $open-sans-font;
                 color: $blue-pattern;
                 font-size: toRem(11);
                 font-weight: bold;
@@ -152,7 +152,7 @@
                 cursor: pointer;
                 display: inline-block;
                 color: $text-form;
-                font-family: 'Open Sans', sans-serif;
+                font-family: $open-sans-font;
                 font-size: toRem(12);
                 font-weight: normal;
                 line-height: 1.42;

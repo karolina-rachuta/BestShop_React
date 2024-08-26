@@ -120,8 +120,8 @@
 
                         &.checked::before {
                             content: "";
-                            min-width: 11px;
-                            min-height: 11px;
+                            min-width: toRem(11);
+                            min-height: toRem(11);
                             background-image: url(../../assets/Ckechmark-1.78835921.svg);
                             color: $green-pattern;
                             background-repeat: no-repeat;
@@ -132,8 +132,8 @@
 
                         &.crossed::before {
                             content: "";
-                            min-width: 11px;
-                            min-height: 11px;
+                            min-width: toRem(11);
+                            min-height: toRem(11);
                             background-image: url(../../assets/Close.90b12221.svg);
                             background-repeat: no-repeat;
                             background-size: cover;
@@ -148,7 +148,7 @@
                     bottom: 0;
                     left: 50%;
                     transform: translate(-50%, 50%);
-                    padding: 15px 53px;
+                    padding: toRem(15) toRem(53);
 
                     @media only screen and (min-width: toRem($breakpoint-medium)) {
                         left: 50%;
@@ -170,12 +170,7 @@
 
             &:hover {
                 transform: scale(110%);
-                box-shadow: 5px 10px 27px #07ACE629;
-            }
-
-            &.chosen {
-                transform: scale(110%);
-                box-shadow: 5px 10px 27px #07ACE629;
+                box-shadow: toRem(5) toRem(10) toRem(27) #07ACE629;
             }
         }
 

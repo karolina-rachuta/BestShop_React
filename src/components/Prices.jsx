@@ -1,24 +1,13 @@
 import { useState, useRef } from "react";
 
 function Prices() {
-  const [chosenPackage, setChosenPackage] = useState(false);
-  const packageRef = useRef(null);
-  function handleChosenPackage() {
-    setChosenPackage((prev) => !prev);
-    if (packageRef.current) {
-      packageRef.current.classList.toggle("chosen", !chosenPackage);
-    }
-  }
 
   return (
     <div className="prices__container" id="prices">
       <div className="prices__hdl">Pricing</div>
       <div className="prices__packages">
         <div
-          className="prices__package prices__package--basic"
-          onClick={handleChosenPackage}
-          ref={packageRef}
-        >
+          className="prices__package prices__package--basic">
           <div className="package__info">
             <p className="package__title">Basic</p>
             <h3 className="package__price package__price--basic">$0</h3>
