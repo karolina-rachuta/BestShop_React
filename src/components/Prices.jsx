@@ -1,4 +1,3 @@
-import { useState, useRef } from "react";
 
 function Prices() {
 
