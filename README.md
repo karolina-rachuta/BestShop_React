@@ -3,6 +3,8 @@ This is an example of a webpage suitable for both desktop and mobile devices.
 
 ## Tech Stack:
 - React js
+- React Router
+- React Scroll
 - SCSS
 - Adobe XD
 - RWD
