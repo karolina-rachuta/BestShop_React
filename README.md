@@ -39,3 +39,6 @@ https://bestshop-rwd-react.netlify.app/
 ## Aknowledgments:
 - Coders Lab- IT School - for the project
 - Google Fonts
+
+## MIT License:
+Copyright &copy; 2024 Karolina Rachuta. All rights reserved.
