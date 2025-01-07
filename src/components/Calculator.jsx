@@ -48,7 +48,9 @@ function Calculator() {
                                 onClick={() => setOpen((prev) => !prev)}
                             >
                                 <div className="input_package left-colmun">
-                                    Choose package
+                                    {selectedPackage
+                                        ? selectedPackage
+                                        : 'Choose package'}
                                 </div>
                                 <ul className="select_options">
                                     {['Basic', 'Professional', 'Premium'].map(

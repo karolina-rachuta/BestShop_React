@@ -1,29 +1,33 @@
 # Best Shop
+
 This is an example of a webpage suitable for both desktop and mobile devices.
 
 ## Live demo:
+
 https://bestshop-rwd-react.netlify.app/
 
 ## Tech Stack:
-- React js
-- React Router
-- React Scroll
-- SCSS
-- Adobe XD
-- RWD
-- Netlify
+
+-   React js
+-   React Router
+-   React Scroll
+-   SCSS
+-   Adobe XD
+-   RWD
+-   Netlify
 
 ## Screenshots:
-- Desktop:
+
+-   Desktop:
 
 ![screenshot](./src/assets/readme/Screenshot_1.png)
 ![screenshot](./src/assets/readme/Screenshot_2.png)
 ![screenshot](./src/assets/readme/Screenshot_3.png)
 ![screenshot](./src/assets/readme/Screenshot_4.png)
+![screenshot](./src/assets/readme/calculator.png)
 ![screenshot](./src/assets/readme/Screenshot_5.png)
 
-
-- Mobile:
+-   Mobile:
 
 ![screenshot](./src/assets/readme/mobile1.png)
 ![screenshot](./src/assets/readme/mobile2.png)
@@ -34,11 +38,14 @@ https://bestshop-rwd-react.netlify.app/
 ![screenshot](./src/assets/readme/mobile7.png)
 ![screenshot](./src/assets/readme/mobile8.png)
 ![screenshot](./src/assets/readme/mobile9.png)
+![screenshot](./src/assets/readme/mobile_calc.png)
 ![screenshot](./src/assets/readme/mobile10.png)
 
 ## Aknowledgments:
-- Coders Lab- IT School - for the project
-- Google Fonts
+
+-   Coders Lab- IT School - for the project
+-   Google Fonts
 
 ## MIT License:
+
 Copyright &copy; 2024 Karolina Rachuta. All rights reserved.
