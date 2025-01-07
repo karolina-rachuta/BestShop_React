@@ -1,59 +1,12 @@
 import React, { useState, useRef } from 'react';
 
-const packageOptions = [
-    {
-        name: 'products',
-        price: 0.5,
-        quanity: 0,
-        selected: false,
-        total: function () {
-            return this.price * this.quanity;
-        },
-    },
-    {
-        name: 'orders',
-        price: 0.25,
-        quanity: 0,
-        selected: false,
-        total: function () {
-            return this.price * this.quanity;
-        },
-    },
-    {
-        name: 'Basic',
-        total: 0,
-        selected: false,
-    },
-    {
-        name: 'Professional',
-        total: 40,
-        selected: false,
-    },
-    {
-        name: 'Premium',
-        total: 60,
-        selected: false,
-    },
-    {
-        name: 'Accounting',
-        total: 35,
-        selected: false,
-    },
-    {
-        name: 'Terminal',
-        total: 5,
-        selected: false,
-    },
-];
-
 function Calculator() {
     const [productsQuantity, setProductsQuantity] = useState('');
     const [monthlyOrders, setMonthlyOrders] = useState('');
     const [selectedPackage, setSelectedPackage] = useState('');
     const [accountingChecked, setAccountingChecked] = useState(false);
     const [terminalChecked, setTerminalChecked] = useState(false);
-
-    function handleChecked() {}
+    const [open, setOpen] = useState(false);
 
     return (
         <section className="calculator">
@@ -86,20 +39,31 @@ function Calculator() {
                                     }
                                 />
                             </div>
-                            <div className="calculator_select">
+                            <div
+                                className={
+                                    open
+                                        ? 'calculator_select open'
+                                        : 'calculator_select'
+                                }
+                                onClick={() => setOpen((prev) => !prev)}
+                            >
                                 <div className="input_package left-colmun">
                                     Choose package
                                 </div>
                                 <ul className="select_options">
-                                    <li className="select_option-basic left-colmun">
-                                        Basic
-                                    </li>
-                                    <li className="select_option-professional left-colmun">
-                                        Professional
-                                    </li>
-                                    <li className="select_option-premium left-colmun">
-                                        Premium
-                                    </li>
+                                    {['Basic', 'Professional', 'Premium'].map(
+                                        (pkg) => (
+                                            <li
+                                                key={pkg}
+                                                className={`select_option-${pkg.toLowerCase()} left-colmun`}
+                                                onClick={() =>
+                                                    setSelectedPackage(pkg)
+                                                }
+                                            >
+                                                {pkg}
+                                            </li>
+                                        )
+                                    )}
                                 </ul>
                             </div>
                             <div className="checkbox_box left-colmun">
@@ -108,7 +72,7 @@ function Calculator() {
                                     type="checkbox"
                                     id="accounting"
                                     checked={accountingChecked}
-                                    onClick={(e) =>
+                                    onChange={(e) =>
                                         setAccountingChecked(e.target.checked)
                                     }
                                 />
@@ -120,7 +84,7 @@ function Calculator() {
                                     type="checkbox"
                                     id="terminal"
                                     checked={terminalChecked}
-                                    onClick={(e) =>
+                                    onChange={(e) =>
                                         setTerminalChecked(e.target.checked)
                                     }
                                 />
@@ -131,70 +95,89 @@ function Calculator() {
                         </div>
                         <div className="calculator_column calculator_column-right">
                             {productsQuantity ? (
-                                <div className="calculator_products-line calculator-line right-column">
+                                <div className="calculator-line right-column">
                                     <span>Products</span>
-                                    <span className="product-line_number">
-                                        {productsQuantity} * $0.5
-                                    </span>
-                                    <span className="product-line_result">
-                                        {`$${productsQuantity * 0.5}`}
+                                    <span>{productsQuantity} * $0.5</span>
+                                    <span>
+                                        {`$${(productsQuantity * 0.5).toFixed(
+                                            2
+                                        )}`}
                                     </span>
                                 </div>
                             ) : (
-                                <div
-                                    className="calculator_products-line calculator-line right-column"
-                                    style={{ visibility: 'hidden' }}
-                                ></div>
+                                <div className="calculator-line right-column hidden"></div>
                             )}
                             {monthlyOrders ? (
-                                <div className="calculator_orders-line calculator-line right-column">
+                                <div className="calculator-line right-column">
                                     <span>Orders</span>
-                                    <span className="order-line_number">
-                                        {monthlyOrders} * $0.25
-                                    </span>
-                                    <span className="order-line_result">
-                                        {`$${monthlyOrders * 0.5}`}
+                                    <span>{monthlyOrders} * $0.25</span>
+                                    <span>
+                                        {`$${(monthlyOrders * 0.25).toFixed(
+                                            2
+                                        )}`}
                                     </span>
                                 </div>
                             ) : (
-                                <div
-                                    className="calculator_orders-linecalculator-line right-column"
-                                    style={{ visibility: 'hidden' }}
-                                ></div>
+                                <div className="calculator-line right-column hidden"></div>
                             )}
-                            <div className="calculator_package-line calculator-line right-column">
-                                <span>Package</span>
-                                <span>Premium</span>
-                                <span>$60</span>
-                            </div>
+
+                            {selectedPackage ? (
+                                <div className="calculator-line right-column">
+                                    <span>Package</span>
+                                    <span>{selectedPackage}</span>
+                                    <span>
+                                        {selectedPackage === 'Basic'
+                                            ? '$0'
+                                            : selectedPackage === 'Professional'
+                                            ? '$40'
+                                            : '$60'}
+                                    </span>
+                                </div>
+                            ) : (
+                                <div className="calculator-line right-column hidden"></div>
+                            )}
+
                             {accountingChecked ? (
-                                <div className="calculator_accounting-line calculator-line right-column">
+                                <div className="calculator-line right-column">
                                     <span>Accounting</span>
                                     <span>$35</span>
                                 </div>
                             ) : (
-                                <div
-                                    className="calculator_accounting-line calculator-line right-column"
-                                    style={{ visibility: 'hidden' }}
-                                ></div>
+                                <div className="calculator-line right-column hidden"></div>
                             )}
 
                             {terminalChecked ? (
-                                <div className="calculator_terminal-line calculator-line right-column">
+                                <div className="calculator-line right-column">
                                     <span>Terminal</span>
                                     <span>$5</span>
                                 </div>
                             ) : (
-                                <div
-                                    className="calculator_terminal-line calculator-line right-column"
-                                    style={{ visibility: 'hidden' }}
-                                ></div>
+                                <div className="calculator-line right-column hidden"></div>
                             )}
 
-                            <div className="total_line calculator-line right-column">
-                                <span>Total:</span>
-                                <span className="total-sum">20 * $0.5</span>
-                            </div>
+                            {productsQuantity ||
+                            monthlyOrders ||
+                            selectedPackage ||
+                            accountingChecked ||
+                            terminalChecked ? (
+                                <div className="calculator-line right-column">
+                                    <span>Total:</span>
+                                    <span>
+                                        $
+                                        {productsQuantity * 0.5 +
+                                            monthlyOrders * 0.25 +
+                                            (selectedPackage === 'Professional'
+                                                ? 40
+                                                : selectedPackage === 'Premium'
+                                                ? 60
+                                                : 0) +
+                                            (accountingChecked ? 35 : 0) +
+                                            (terminalChecked ? 5 : 0)}
+                                    </span>
+                                </div>
+                            ) : (
+                                <div className="calculator-line right-column hidden"></div>
+                            )}
                         </div>
                     </div>
                 </div>
