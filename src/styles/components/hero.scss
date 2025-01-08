@@ -15,7 +15,7 @@
     display: flex;
     justify-content: center;
 
-    @media only screen and (max-width: toRem(500)) {
+    @media only screen and (max-width: toRem($breakpoint-small)) {
         background-image: url(../../assets/bgc-mobile.webp);
         background-size: 110%;
     }
@@ -25,7 +25,6 @@
         min-height: toRem(400);
         background-position: top toRem(360) center;
         margin-bottom: toRem(30);
-        height: 100vh;
     }
 
     @media only screen and (min-width: toRem(950)) and (max-width: toRem(1450)) {
@@ -33,7 +32,6 @@
         min-height: toRem(400);
         background-position: top toRem(360) center;
         margin-bottom: toRem(30);
-        height: 100vh;
     }
 
     @media only screen and (min-width: toRem(1450)) {
@@ -41,7 +39,6 @@
         min-height: toRem(400);
         background-position: top toRem(360) center;
         margin-bottom: toRem(30);
-        height: 100vh;
     }
 
     .hero__box {
