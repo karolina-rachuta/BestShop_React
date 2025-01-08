@@ -1,6 +1,9 @@
 import Laptop_Picture from '../assets/Macbook2@2x.webp';
+import Laptop_Mobile from '../assets/Macbook2@2x_mobile.webp';
 import Phone_Picture from '../assets/iPhone2@2x.webp';
+import Phone_Mobile from '../assets/iPhone2@2x_mobile.webp';
 import Trumpet_Picture from '../assets/Trumpet@2x.webp';
+import Trumpet_Mobile from '../assets/Trumpet@2xmobile.webp';
 
 function Benefits() {
     return (
@@ -18,26 +21,17 @@ function Benefits() {
                     <div className="benefit__column--laptop">
                         <picture>
                             <source
-                                media="(max-width:500px)"
-                                width="193"
-                                height="110"
+                                media="(max-width:576px)"
+                                srcset={Laptop_Mobile}
                             />
-                            <source
-                                media="(min-width:500px)"
-                                width="249"
-                                height="142"
-                            />
-                            <source
-                                media="(min-width:1000px)"
+                            <img
+                                src={Laptop_Picture}
+                                alt="Macbook picture"
+                                className="img__macbook"
                                 width="386"
                                 height="220"
                             />
                         </picture>
-                        <img
-                            src={Laptop_Picture}
-                            alt="Macbook picture"
-                            className="img__macbook"
-                        />
                     </div>
                 </div>
             </div>
@@ -54,26 +48,17 @@ function Benefits() {
                     <div className="benefit__column--phone">
                         <picture>
                             <source
-                                media="(max-width:500px)"
-                                width="175"
-                                height="135"
+                                media="(max-width:576px)"
+                                srcSet={Phone_Mobile}
                             />
-                            <source
-                                media="(min-width:500px)"
-                                width="262"
-                                height="202"
-                            />
-                            <source
-                                media="(min-width:1000px)"
+                            <img
+                                src={Phone_Picture}
+                                alt="Phone picture"
+                                className="img__phone"
                                 width="350"
                                 height="270"
                             />
                         </picture>
-                        <img
-                            src={Phone_Picture}
-                            alt="Phone picture"
-                            className="img__phone"
-                        />
                     </div>
                 </div>
             </div>
@@ -89,26 +74,17 @@ function Benefits() {
                 <div className="benefit__column benefit__column--trumpet">
                     <picture>
                         <source
-                            media="(max-width:500px)"
-                            width="198"
-                            height="139"
+                            media="(max-width:576)"
+                            srcset={Trumpet_Mobile}
                         />
-                        <source
-                            media="(min-width:500px)"
-                            width="276"
-                            height="194"
-                        />
-                        <source
-                            media="(min-width:1000px)"
+                        <img
+                            src={Trumpet_Picture}
+                            alt="Trumpet picture"
+                            className="img__trumpet"
                             width="276"
                             height="194"
                         />
                     </picture>
-                    <img
-                        src={Trumpet_Picture}
-                        alt="Trumpet picture"
-                        className="img__trumpet"
-                    />
                 </div>
             </div>
         </div>

@@ -78,7 +78,7 @@
 
         @media only screen and (min-width: toRem(700)) {
             display: flex;
-            min-width: 500px;
+            min-width: toRem(500);
             padding-top: toRem(0);
         }
 

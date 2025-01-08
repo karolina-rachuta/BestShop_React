@@ -35,7 +35,7 @@
 
         @media only screen and (min-width: toRem(700)) {
             width: 50%;
-            min-height: 300px;
+            min-height: toRem(300);
         }
     }
 
@@ -119,7 +119,7 @@
         input {
             margin-bottom: toRem(16);
             border: none;
-            border-bottom: 1px solid $text-form;
+            border-bottom: toRem(1) solid $text-form;
             width: 100%;
             cursor: pointer;
         }
@@ -169,7 +169,7 @@
                 top: toRem(-6);
                 width: toRem(16);
                 height: toRem(16);
-                outline: 1px solid $text-form;
+                outline: toRem(1) solid $text-form;
                 background-color: #ffffff;
                 border-radius: toRem(3);
             }

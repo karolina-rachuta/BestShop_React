@@ -5,42 +5,42 @@
     width: 100%;
     padding-inline: toRem($padding-container);
     height: 100vh;
-    min-height: 550px;
+    min-height: toRem(550);
     background-color: $background-color;
     background-image: url(../../assets/Background@2x.webp);
     background-repeat: no-repeat;
     background-size: 210%;
-    background-position: top 310px center;
+    background-position: top toRem(310) center;
     margin: 0 auto;
     display: flex;
     justify-content: center;
 
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: toRem(500)) {
         background-image: url(../../assets/bgc-mobile.webp);
         background-size: 110%;
     }
 
     @media only screen and (min-width: toRem($breakpoint-medium)) and (max-width: toRem(950)) {
         background-size: 150%;
-        min-height: 400px;
-        background-position: top 360px center;
-        margin-bottom: 30px;
+        min-height: toRem(400);
+        background-position: top toRem(360) center;
+        margin-bottom: toRem(30);
         height: 100vh;
     }
 
     @media only screen and (min-width: toRem(950)) and (max-width: toRem(1450)) {
         background-size: 120%;
-        min-height: 400px;
-        background-position: top 360px center;
-        margin-bottom: 30px;
+        min-height: toRem(400);
+        background-position: top toRem(360) center;
+        margin-bottom: toRem(30);
         height: 100vh;
     }
 
     @media only screen and (min-width: toRem(1450)) {
         background-size: 100%;
-        min-height: 400px;
-        background-position: top 360px center;
-        margin-bottom: 30px;
+        min-height: toRem(400);
+        background-position: top toRem(360) center;
+        margin-bottom: toRem(30);
         height: 100vh;
     }
 

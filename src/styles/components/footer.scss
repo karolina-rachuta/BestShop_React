@@ -34,16 +34,16 @@
             background-image: url(../../assets/Twitter.svg);
             background-repeat: no-repeat;
             display: block;
-            width: 25px;
-            height: 25px;
+            width: toRem(25);
+            height: toRem(25);
         }
 
         .facebook {
             background-image: url(../../assets/Facebook.svg);
             background-repeat: no-repeat;
             display: block;
-            width: 25px;
-            height: 25px;
+            width: toRem(25);
+            height: toRem(25);
         }
     }
 }
