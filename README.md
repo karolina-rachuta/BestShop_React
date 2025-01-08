@@ -1,6 +1,6 @@
 # Best Shop
 
-This is an example of a webpage suitable for both desktop and mobile devices.
+**BestShop** is a responsive website designed to showcase the advantages of an online store. The site features sections that present the key functionalities and benefits of using the e-commerce platform. The project focuses on modern design, responsiveness, and optimization of resource loading (web performance: desktop - 100%, mobile - 93%).
 
 ## Live demo:
 
@@ -8,13 +8,19 @@ https://bestshop-rwd-react.netlify.app/
 
 ## Tech Stack:
 
--   React js
+-   React (useState, useEffect)
 -   React Router
 -   React Scroll
 -   SCSS
 -   Adobe XD
 -   RWD
 -   Netlify
+
+## How to run:
+
+-   git clone git@github.com:karolina-rachuta/BestShop_React.git
+-   npm install
+-   npm run start
 
 ## Screenshots:
 
