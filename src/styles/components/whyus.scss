@@ -26,7 +26,7 @@
 
     h2 {
         text-align: center;
-        font-family: $raleway-font;
+        font-family: 'ralewayregular', sans-serif;
         font-weight: normal;
         font-size: toRem(30);
         color: $text-color;
@@ -130,7 +130,7 @@
 
             .icon__number {
                 text-align: center;
-                font-family: $raleway-font;
+                font-family: 'ralewayextrabold', sans-serif;
                 font-weight: 800;
                 font-size: toRem(20);
                 letter-spacing: toRem(5.96);
@@ -140,7 +140,7 @@
 
             .icon__lead {
                 text-align: center;
-                font-family: $raleway-font;
+                font-family: 'ralewayregular', sans-serif;
                 font-weight: 400;
                 font-size: toRem(17);
                 color: $light-text;

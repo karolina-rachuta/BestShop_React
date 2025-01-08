@@ -12,7 +12,7 @@
 
     .prices__hdl {
         font-size: toRem(36);
-        font-family: $raleway-font;
+        font-family: 'ralewayregular', sans-serif;
         font-weight: normal;
         color: $text-color;
         margin-top: toRem(50);
@@ -71,14 +71,14 @@
                 gap: toRem(10);
 
                 .package__title {
-                    font-family: $raleway-font;
+                    font-family: 'ralewaybold', sans-serif;
                     font-weight: bold;
                     font-size: toRem(21);
                     color: #13253B;
                 }
 
                 .package__price {
-                    font-family: $open-sans-font;
+                    font-family: 'open_sanslight', sans-serif;
                     font-size: toRem(46);
                     font-weight: 300;
                 }
@@ -96,7 +96,7 @@
                 }
 
                 .package__offer {
-                    font-family: $raleway-font;
+                    font-family: 'ralewaybold', sans-serif;
                     font-weight: bold;
                     font-size: toRem(12);
                     color: #13253B;
@@ -109,7 +109,7 @@
                 ul {
                     li {
                         list-style: none;
-                        font-family: $open-sans-font;
+                        font-family: 'open_sansregular', sans-serif;
                         font-size: toRem(14);
                         font-weight: normal;
                         color: $text-color;
