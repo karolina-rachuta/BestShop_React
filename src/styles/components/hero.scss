@@ -7,7 +7,7 @@
     height: 100vh;
     min-height: toRem(550);
     background-color: $background-color;
-    background-image: url(../../assets/Background@2x.webp);
+    background-image: url(../../../public/Background@2x.webp);
     background-repeat: no-repeat;
     background-size: 210%;
     background-position: top toRem(310) center;
@@ -16,7 +16,7 @@
     justify-content: center;
 
     @media only screen and (max-width: toRem($breakpoint-small)) {
-        background-image: url(../../assets/bgc-mobile.webp);
+        background-image: url(../../../public/bgc-mobile.webp);
         background-size: 110%;
     }
 
