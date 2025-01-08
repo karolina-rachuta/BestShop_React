@@ -1,13 +1,14 @@
+import { useEffect } from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import { Bg_desktop } from '../src/assets/Background@2x.webp';
-import { Bg_desktop } from '../src/assets/bgc-mobile.webp';
+import Bg_desktop from './assets/Background@2x.webp';
+import Bg_mobile from './assets/bgc-mobile.webp';
 import Home from './components/Home';
 import './App.scss';
 
 function App() {
     useEffect(() => {
         //preloading image
-        imageList = [Bg_desktop, Bg_desktop];
+        let imageList = [Bg_desktop, Bg_mobile];
         imageList.forEach((image) => {
             new Image().src = image;
         });
