@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState } from 'react';
 
 function Calculator() {
     const [productsQuantity, setProductsQuantity] = useState('');
@@ -131,7 +131,7 @@ function Calculator() {
                                         {selectedPackage === 'Basic'
                                             ? '$0'
                                             : selectedPackage === 'Professional'
-                                            ? '$40'
+                                            ? '$25'
                                             : '$60'}
                                     </span>
                                 </div>
@@ -169,7 +169,7 @@ function Calculator() {
                                         {productsQuantity * 0.5 +
                                             monthlyOrders * 0.25 +
                                             (selectedPackage === 'Professional'
-                                                ? 40
+                                                ? 25
                                                 : selectedPackage === 'Premium'
                                                 ? 60
                                                 : 0) +

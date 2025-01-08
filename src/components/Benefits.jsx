@@ -16,10 +16,25 @@ function Benefits() {
                 </div>
                 <div className="benefit__column">
                     <div className="benefit__column--laptop">
+                        <picture>
+                            <source
+                                media="(max-width:500px)"
+                                width="193"
+                                height="110"
+                            />
+                            <source
+                                media="(min-width:500px)"
+                                width="249"
+                                height="142"
+                            />
+                            <source
+                                media="(min-width:1000px)"
+                                width="386"
+                                height="220"
+                            />
+                        </picture>
                         <img
                             src={Laptop_Picture}
-                            width="386"
-                            height="220"
                             alt="Macbook picture"
                             className="img__macbook"
                         />
@@ -37,12 +52,27 @@ function Benefits() {
                 </div>
                 <div className="benefit__column benefit__column--reverse">
                     <div className="benefit__column--phone">
+                        <picture>
+                            <source
+                                media="(max-width:500px)"
+                                width="175"
+                                height="135"
+                            />
+                            <source
+                                media="(min-width:500px)"
+                                width="262"
+                                height="202"
+                            />
+                            <source
+                                media="(min-width:1000px)"
+                                width="350"
+                                height="270"
+                            />
+                        </picture>
                         <img
                             src={Phone_Picture}
                             alt="Phone picture"
                             className="img__phone"
-                            width="350"
-                            height="270"
                         />
                     </div>
                 </div>
@@ -57,12 +87,27 @@ function Benefits() {
                     </p>
                 </div>
                 <div className="benefit__column benefit__column--trumpet">
+                    <picture>
+                        <source
+                            media="(max-width:500px)"
+                            width="198"
+                            height="139"
+                        />
+                        <source
+                            media="(min-width:500px)"
+                            width="276"
+                            height="194"
+                        />
+                        <source
+                            media="(min-width:1000px)"
+                            width="276"
+                            height="194"
+                        />
+                    </picture>
                     <img
                         src={Trumpet_Picture}
                         alt="Trumpet picture"
                         className="img__trumpet"
-                        width="276"
-                        height="194"
                     />
                 </div>
             </div>

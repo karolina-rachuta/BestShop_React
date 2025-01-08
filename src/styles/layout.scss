@@ -2,14 +2,30 @@
 @import "./utilis";
 
 * {
-   padding: 0;
-   margin: 0;
-   box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 html,
 body {
-   font-size: toRem($base-font-size);
-   max-width: toRem(1626);
-   margin: 0 auto;
+    font-size: toRem($base-font-size);
+    max-width: toRem(1626);
+    margin: 0 auto;
+}
+
+body::before {
+    content: url(../assets/bgc-mobile.webp);
+    position: absolute;
+    top: -9999rem;
+    left: -9999rem;
+    opacity: 0;
+}
+
+body::before {
+    content: url(../assets/Background@2x.webp);
+    position: absolute;
+    top: -9999rem;
+    left: -9999rem;
+    opacity: 0;
 }
