@@ -9,16 +9,8 @@
 @import './styles/components/contact.scss';
 @import './styles/components/whyus.scss';
 @import './styles/components/benefits.scss';
-@import './styles//components/prices.scss';
+@import './styles/components/prices.scss';
 @import './styles/components/calculator.scss';
-
-// body::before {
-//     content: url(../assets/bgc-mobile.webp);
-//     position: absolute;
-//     top: -9999rem;
-//     left: -9999rem;
-//     opacity: 0;
-// }
 
 .container {
     width: 100%;

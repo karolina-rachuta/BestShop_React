@@ -176,23 +176,13 @@
         }
 
         .img__macbook {
-            width: toRem(193);
-
-            @media only screen and (min-width: toRem($breakpoint-medium)) {
-                width: 100%;
-                max-width: toRem(387);
-                height: auto;
-            }
+            width: 100%;
+            height: auto;
         }
 
         .img__phone {
-            width: toRem(175);
-
-            @media only screen and (min-width: toRem($breakpoint-medium)) {
-                width: 100%;
-                max-width: toRem(426);
-                height: auto;
-            }
+            width: 100%;
+            height: auto;
         }
     }
 
