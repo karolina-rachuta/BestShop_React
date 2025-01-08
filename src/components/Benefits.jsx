@@ -22,7 +22,7 @@ function Benefits() {
                         <picture>
                             <source
                                 media="(max-width:576px)"
-                                srcset={Laptop_Mobile}
+                                srcSet={Laptop_Mobile}
                             />
                             <img
                                 src={Laptop_Picture}
@@ -75,7 +75,7 @@ function Benefits() {
                     <picture>
                         <source
                             media="(max-width:576)"
-                            srcset={Trumpet_Mobile}
+                            srcSet={Trumpet_Mobile}
                         />
                         <img
                             src={Trumpet_Picture}
